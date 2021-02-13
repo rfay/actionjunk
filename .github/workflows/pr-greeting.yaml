@@ -9,4 +9,4 @@ jobs:
         uses: JJ/pr-greeting-action@releases/v1
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          pr-message: "Hey **#** welcome to this repo"
+          greeting: "Hey **#** welcome to this repo"
