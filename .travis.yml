@@ -1,0 +1,18 @@
+language: go
+
+go:
+- 1.x
+
+arch: arm64-graviton2
+virt: vm
+os: linux
+dist: focal
+group: edge
+
+jobs:
+  include:
+    - name: demo jq problem
+      script: |
+        which jq
+        file $(which jq)
+        jq --version
